@@ -1,0 +1,133 @@
+/* fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease-in;
+}
+/* section sid-nav */
+.sid-nav {
+  width: 250px;
+  left: -250px;
+  position: absolute;
+  z-index: 999;
+}
+.sid-nav .links a {
+  display: block;
+  padding-top: 50px;
+}
+.sid-nav2 {
+  position: absolute;
+  z-index: 999;
+  width: 70px;
+  left: 0;
+}
+.animate-to-down {
+  top: 300px;
+}
+.animate-to-up {
+  top: 10px;
+}
+
+/* section show data */
+.show .card {
+  position: relative;
+}
+.show .img {
+  width: 270px;
+  height: 270px;
+}
+.show .title-layer {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 270px;
+}
+.show .card:hover .title-layer {
+  top: 0;
+}
+/* search section */
+.search-section input::placeholder {
+  color: darkgray;
+}
+/* area section */
+.area-section .icon i,
+.main-ingredients-section .icon i {
+  font-size: 90px;
+}
+/* details */
+.show-details .alert,
+.show-details .show-link {
+  width: fit-content;
+}
+
+/* contact section */
+.contact-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact button:hover {
+  color: black !important;
+  background-color: darkred;
+}
+.col span {
+  padding: 10px 3px;
+  font-size: 12px;
+  margin: 10px;
+  margin: auto;
+}
+/* / */
+/* .inner-load-screen {
+  z-index: 999;
+  position: absolute;
+}
+.fa-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.lds-dual-ring {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 80px;
+  height: 80px;*/
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success {
+  border: 5px solid green;
+}
+
+/* link animation */
+.cursor-pointer {
+  cursor: pointer;
+}

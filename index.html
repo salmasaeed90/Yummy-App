@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="./logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body class="bg-black">
+    <!-- loading screen -->
+    <div class="loading"></div>
+
+    <!-- nav-sid-section -->
+    <div
+      class="sid-nav position-fixed vh-100 bg-black d-flex flex-column justify-content-between"
+    >
+      <div class="links py-3">
+        <a
+          onclick="showSearchInput()"
+          class="search position-relative px-3 pb-2 text-capitalize text-white text-decoration-none fs-5"
+          href="#search"
+          >search</a
+        >
+        <a
+          onclick="getAllCategories()"
+          class="categories position-relative px-3 pb-2 text-capitalize text-white text-decoration-none fs-5"
+          href="#categories"
+          >categories</a
+        >
+        <a
+          onclick="getApiArea()"
+          class="area position-relative px-3 pb-2 text-capitalize text-white text-decoration-none fs-5"
+          href="#"
+          >area</a
+        >
+        <a
+          onclick="getMainIngredients()"
+          class="ingradients position-relative px-3 pb-2 text-capitalize text-white text-decoration-none fs-5"
+          href="#"
+          >ingradients</a
+        >
+        <a
+          onclick="createContactUs()"
+          class="contact-us position-relative px-3 pb-2 text-capitalize text-white text-decoration-none fs-5"
+          href="#contact_us"
+          >contact us</a
+        >
+      </div>
+      <div class="footer text-secondary px-3">
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="copy-right">
+          <p>Copyright Â© 2023 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- nav sid 2 with white color -->
+    <div
+      class="sid-nav2 py-3 bg-white position-fixed vh-100 d-flex align-items-center flex-column justify-content-between"
+    >
+      <div class="home-icon">
+        <img
+          onclick="getMeals()"
+          src="./logo.png"
+          class="w-100 logo"
+          alt="logo"
+        />
+      </div>
+      <div class="open-close-icon">
+        <i class="fa-solid fa-bars fs-3"></i>
+        <i class="d-none fs-3 fa-solid fa-xmark"></i>
+      </div>
+      <div class="social-icon">
+        <div>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <section class="p-5">
+      <div id="search-container"></div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- show data in home body-->
+
+    <section class="show-home-data show p-5">
+      <div class="container">
+        <div id="row" class="row g-3"></div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script src="js/home.js"></script>
+  </body>
+</html>
